@@ -1,0 +1,339 @@
+.container {
+    width: 100%
+}
+
+body {
+    background: rgb(239, 237, 235);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+/* 头部样式 */
+header {
+    height: 3.1875rem;
+    background: rgb(75, 187, 166);
+    display: flex;
+    justify-content: space-between;
+}
+
+header .header-address {
+    height: 100%;
+    width: 4.21875rem;
+    color: #fff;
+    font-size: 1rem;
+    background: rgb(68, 165, 147);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .header-search {
+    position: relative;
+    flex: 1;
+}
+
+header .header-search .search-input {
+    background: rgb(68, 165, 147);
+    height: 2rem;
+    width: 16.15625rem;
+    background: rgba(0, 0, 0, .15);
+    border: 0;
+    border-radius: .2rem;
+    position: absolute;
+    left: .1rem;
+    top: .6rem;
+
+}
+
+header .header-search .placeholder-info {
+    color: rgba(255, 255, 255);
+    font-size: .75rem;
+    position: absolute;
+    left: .3rem;
+    top: 1rem;
+}
+
+header .header-my {
+    height: 100%;
+    width: 2.9375rem;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: .6rem;
+}
+
+/* 海报和轮播图部分 */
+.banner {
+    width: 100%;
+    height: 7rem;
+    border-bottom: 1px solid #c6c0b3;
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-container .swiper-pagination-bullet-active {
+    opacity: 1;
+    background: #06c1ae;
+}
+
+.swiper-slide {
+    background: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1rem;
+    margin-bottom: .46875rem;
+}
+
+.swiper .swiper-item {
+    width: 4.6875rem;
+    height: 5.0625rem;
+}
+
+.swiper .swiper-item a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    text-decoration: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper .swiper-item a img {
+    display: block;
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.swiper .swiper-item a span {
+    color: #666;
+    font-size: .75rem;
+    padding: .25rem 0;
+}
+
+/* 内容部分样式 */
+section {
+    width: 100%;
+    background: #fff;
+    border-bottom: .0625rem solid #c6c0b3;
+}
+
+section .content {
+    padding: 0 .625rem;
+}
+
+section .content .content-title {
+    height: 3.125rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: .0625rem solid #c6c0b3;
+}
+
+section .content ul li {
+    list-style: none;
+    width: 100%;
+    border-bottom: 1px solid #c6c0b3;
+}
+
+section .content li .store-item-info {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: .9375rem 0;
+}
+
+section .content li .store-item-info .item-info-left {
+    width: 5.375rem;
+    height: 4.875rem;
+}
+
+section .content li .store-item-info .item-info-left a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+section .content li .store-item-info .item-info-left a img {
+    width: 100%;
+    height: 100%;
+}
+
+section .content li .store-item-info .item-info-right {
+    padding: 0 .45rem;
+    width: 100%;
+    height: 4.875rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+section .content li .store-item-info .item-info-right .h3 {
+    font-weight: bold;
+    color: #333;
+}
+
+section .content li .store-item-info .item-info-right .activities {
+    color: #333;
+    font-size: .75rem;
+}
+
+section .content li .store-item-info .item-info-right .price-sales {
+    padding-top: 1.25rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+section .content li .store-item-info .item-info-right .price-sales>p {
+    font-size: .75rem;
+    display: flex;
+    align-items: center;
+}
+
+section .content li .store-item-info .item-info-right .price-sales>p>b {
+    font-size: 1.125rem;
+    margin-right: .45rem;
+    font-weight: border;
+    color: #06c1ae;
+}
+
+section .content li .store-item-info .item-info-right .price-sales span {
+    font-size: .75rem;
+}
+
+section .content li .store-item-info .item-info-right .price-sales>span {
+    padding-right: .75rem;
+}
+
+section .content .read-more {
+    height: 3.125rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: bold;
+    color: #06c1ae;
+}
+
+/* 底部样式 */
+footer {
+    width: 100%;
+}
+
+footer .footer-handle {
+    padding: 1.25rem 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .footer-handle .left a {
+    /* display: block; */
+    padding: 0.375rem .875rem;
+    font-size: .875rem;
+    color: #06c1ae;
+    border: .0625rem solid #06c1ae;
+    border-radius: .2rem;
+}
+
+footer .footer-handle .left a:nth-child(1) {
+    /* display: block; */
+    margin-left: 0.475rem;
+    margin-right: 0.275rem;
+
+}
+
+footer .footer-handle .right {
+    font-size: 1.75rem;
+    display: flex;
+    justify-content: center;
+}
+
+footer .footer-handle .right>a {
+    padding: 0.375rem 1.75rem;
+    color: #06c1ae;
+    font-size: .875rem;
+    border: .0625rem solid #06c1ae;
+    border-radius: .2rem;
+    margin-right: 0.675rem;
+}
+
+footer .footer-nav {
+    width: 100%;
+    /* display: flex; */
+    /* padding: .9375rem .625rem;
+    justify-content: center;
+    align-items: center; */
+}
+
+footer .footer-nav>ul {
+    display: flex;
+    padding: .9375rem .625rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+footer .footer-nav>ul>li {
+    flex: 1;
+    color: #06c1ae;
+    font-size: .875rem
+}
+
+footer .footer-nav>ul>li+li {
+    border-left: .0625rem solid #6666;
+}
+
+footer .footer-link {
+    font-size: .875rem;
+    margin: 1.25rem;
+    text-align: center;
+}
+
+footer .footer-link a {
+    color: #06c1ae;
+    padding-left: 1.25rem;
+}
+
+footer .footer-copyright {
+    position: relative;
+    text-align: center;
+}
+
+footer .footer-copyright>.hr {
+    width:100%;
+    top:50%;
+    border-top: .0625rem solid #999;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+footer .footer-copyright>.text {
+    position: relative;
+    font-size: 1rem;
+    /* left: .2rem; */
+    top: -0.5rem;
+    background: rgb(239, 237, 235);
+    padding: 0 .4rem;
+}
